@@ -1,1 +1,12 @@
-$pink: silver;
+%gradient {
+	background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0.136, rgb(102, 106, 142)),color-stop(0.6, rgb(88, 53, 105)));
+	/* Android 2.3 */
+	background-image: -webkit-linear-gradient(left,rgb(102, 106, 142) 13.6%,rgb(88, 53, 105) 60%);
+	/* IE10+ */
+	background-image: linear-gradient(to right,rgb(102, 106, 142) 13.6%,rgb(88, 53, 105) 60%);
+	background-image: -ms-linear-gradient(left,rgb(102, 106, 142) 13.6%,rgb(88, 53, 105) 60%);
+}
+
+$accent-color: #454545;
+
+$base-color: #959393;

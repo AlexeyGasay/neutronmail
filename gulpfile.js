@@ -51,7 +51,7 @@ function styles() {
 
 	// Минификация Css
 	.pipe(cleanCSS({
-		level: 2,
+		level: 0,
 		compatibility: 'ie8'
 	}))
 	// Выходная папка для стилей
@@ -81,7 +81,8 @@ function watch() {
 	browserSync.init({
 				server: {
 						baseDir: "./"
-				}
+				},
+				notify: false
 		});
 
 		// Следить за Scss
