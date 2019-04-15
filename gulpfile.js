@@ -50,10 +50,10 @@ function styles() {
 				}))
 
 	// Минификация Css
-	.pipe(cleanCSS({
-		level: 0,
-		compatibility: 'ie8'
-	}))
+	// .pipe(cleanCSS({
+	// 	level: 0,
+	// 	compatibility: 'ie8'
+	// }))
 	// Выходная папка для стилей
 	.pipe(gulp.dest('./dist/css'))
 	.pipe(browserSync.stream());

@@ -1,7 +1,9 @@
+// Adaptive styles at the end of the file
 @import 'color';
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 * {
@@ -23,7 +25,7 @@ body {
 	background-image: url(../img/header-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+	background-size: cover;
 	height: 800px;
 }
 
@@ -709,3 +711,6 @@ footer {
 
 	}
 }
+
+// The respondive styles
+@import 'media';
