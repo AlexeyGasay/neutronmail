@@ -72,7 +72,7 @@ body {
 
 }
 
-.top-menu {
+.top-nav {
 	display: flex;
 	justify-content: space-between;
 }
@@ -86,7 +86,7 @@ body {
 		outline: none;
 		transition: 3s;
 		padding-bottom: 3px;
-
+		width: 90px;
 		&:hover,
 		&:focus {
 			transition: .3s;
@@ -103,6 +103,7 @@ body {
 		outline: none;
 		padding: 10px 20px;
 		transition: 1s;
+		max-width: 90px;
 
 		&:hover,
 		&:focus  {
@@ -295,82 +296,80 @@ body {
 
 
 
-.title-phisical-security {
-
-	.learn-more {
-		text-align: center;
-		margin-top: 40px;
+.learn-more {
+	text-align: center;
+	margin-top: 40px;
 
 
-		span {
-			position: relative;
+	span {
+		position: relative;
+	}
+
+	a {
+		display: inline-block;
+		transform: translateX(71%);
+		left: 55%;
+		border: 1px solid $accent-color;
+		border-radius: 35px;
+		color: $base-color;
+		font-size: 16px;
+		padding: 25px 30px;
+		outline: none;
+		transition: .3s;
+		-webkit-box-shadow: inset 0px 8px 50px 0px rgba(99,105,144,1);
+		-moz-box-shadow: inset 0px 8px 50px 0px rgba(99,105,144,1);
+		box-shadow: inset 0px 8px 50px 0px rgba(99,105,144,1);
+
+		.blur {
+			transition: .3s;
 		}
 
-		a {
-			display: inline-block;
-			transform: translateX(71%);
-			left: 55%;
-			border: 1px solid $accent-color;
-			border-radius: 35px;
-			color: $base-color;
-			font-size: 16px;
-			padding: 25px 30px;
-			outline: none;
-			transition: .3s;
-			-webkit-box-shadow: inset 0px 8px 50px 0px rgba(99,105,144,1);
-			-moz-box-shadow: inset 0px 8px 50px 0px rgba(99,105,144,1);
-			box-shadow: inset 0px 8px 50px 0px rgba(99,105,144,1);
+		&:hover,
+		&:focus  {
+			box-shadow: none;
 
+			color: $accent-color;
 			.blur {
 				transition: .3s;
-			}
-
-			&:hover,
-			&:focus  {
-				box-shadow: none;
-
-				color: $accent-color;
-				.blur {
-					transition: .3s;
-					filter: blur(0px);
-				}
-			}
-
-			span {
-				transition: .025s;
-				filter: blur(3px);
-
-			}
-
-
-			&:before {
-				background-color: $base-color;
-				content: '';
-				height: 1px;
-				left: -400%;
-				position: absolute;
-				top: 50%;
-				width: 400%;
-				overflow: hidden;
-				display: inline-block;
-			}
-
-			&:after {
-				content: '';
-				position: absolute;
-				height: 800%;
-				background-color: $base-color;
-				top: -800%;
-				right: 65%;
-				width: 1px;
-				display: inline-block;
+				filter: blur(0px);
 			}
 		}
-	}
 
-	.sponsors {
-		margin-top: 70px;
+		span {
+			transition: .025s;
+			filter: blur(3px);
+
+		}
+
+
+		&:before {
+			background-color: $base-color;
+			content: '';
+			height: 1px;
+			left: -400%;
+			position: absolute;
+			top: 50%;
+			width: 400%;
+			overflow: hidden;
+			display: inline-block;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			height: 800%;
+			background-color: $base-color;
+			top: -800%;
+			right: 65%;
+			width: 1px;
+			display: inline-block;
+		}
 	}
+}
+
+
+.sponsors {
+	margin-top: 70px;
 }
 
 

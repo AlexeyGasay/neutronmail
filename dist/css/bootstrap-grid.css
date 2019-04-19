@@ -23,9 +23,10 @@ html {
   margin-left: auto;
   padding-right: 100px;
   padding-left: 100px;
+  transition: .3s;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
@@ -39,9 +40,9 @@ html {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 990px;
   }
-}
+} */
 
 @media (min-width: 1200px) {
   .container {
