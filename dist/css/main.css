@@ -27,7 +27,10 @@ html {
   font-family: 'Titillium Web'; }
 
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+  min-width: 100%; }
 
 .header-container {
   padding-top: 80px;
@@ -570,6 +573,9 @@ footer {
   .container {
     padding-right: 55px;
     padding-left: 55px; }
+  .learn-more a span {
+    -webkit-filter: blur(0px);
+    filter: blur(0px); }
   footer:before {
     width: 80%; }
   footer:after {
@@ -586,6 +592,13 @@ footer {
     display: none; }
   .learn-more a:after {
     visibility: hidden; }
+  footer:before {
+    width: 100%; }
+  footer:after {
+    display: none; }
+  .footer-sponsors img {
+    -webkit-transform: translate(0%);
+    transform: translate(0%); }
   .footer-nav-1 {
     margin-left: 100px; } }
 
@@ -593,8 +606,6 @@ footer {
   .container {
     padding-right: 15px;
     padding-left: 15px; }
-  footer:before {
-    width: 95%; }
   footer:after {
     right: 5%; }
   .footer-nav-1 {
@@ -643,4 +654,48 @@ footer {
     -webkit-filter: none;
     filter: none; }
   .banner {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+  .advantage {
+    min-width: 50%;
+    margin: 10px auto; }
+  .sponsors {
+    padding: 0; }
+    .sponsors img {
+      width: 100%;
+      height: auto; }
+  .download-app {
+    margin: 0; }
+  footer {
+    overflow: inherit; }
+  .footer-info-block div {
+    min-width: 50%;
+    margin: 15px auto;
+    text-align: left; }
+  .footer-nav-1:after {
+    content: none; } }
+
+@media screen and (max-width: 720px) {
+  .advantage {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 100%; } }
+
+@media screen and (max-width: 620px) {
+  .upgrade-plan div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .upgrade-plan a {
+    max-width: 70%;
+    padding: 15px 25px;
+    margin: 10px auto; }
+  .footer-sponsors h3 {
+    -webkit-transform: translate(0px);
+    transform: translate(0px); }
+  .footer-info-block div {
+    min-width: 100%; } }

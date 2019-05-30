@@ -77,6 +77,10 @@
 		padding-left: 55px;
 	}
 
+	.learn-more a span {
+		filter: blur(0px);
+	}
+
 	footer {
 		&:before {
 			width: 80%;
@@ -86,6 +90,9 @@
 			right: 20%;
 		}
 	}
+
+
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -114,11 +121,29 @@
 
 	.learn-more {
 		a {
+
 			&:after {
 				visibility: hidden;
 			}
+
+			span {
+
+			}
 		}
 
+
+	}
+
+	footer:before {
+		width: 100% ;
+	}
+
+	footer:after {
+		display: none;
+	}
+
+	.footer-sponsors img {
+		transform: translate(0%);
 
 	}
 
@@ -135,9 +160,7 @@
 	}
 
 	footer {
-		&:before {
-			width: 95%;
-		}
+
 
 		&:after {
 			right: 5%;
@@ -149,6 +172,7 @@
 	}
 
 }
+
 
 @media screen and (max-width: 1024px) {
 	.container {
@@ -205,4 +229,86 @@
 
 
 
+		.advantage {
+			min-width: 50%;
+			margin: 10px auto;
+		}
+
+		.sponsors {
+			padding: 0;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+
+		.download-app {
+			margin: 0;
+		}
+
+		footer {
+			overflow: inherit;
+		}
+
+		.footer-info-block {
+
+			div {
+				min-width: 50%;
+				margin: 15px auto;
+				text-align: left;
+			}
+		}
+
+
+		.footer-nav-1 {
+			&:after {
+				content: none;
+			}
+		}
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+
+
+	.advantage {
+		justify-content: center;
+		min-width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 620px) {
+	.upgrade-plan {
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		a {
+			max-width: 70%;
+			padding: 15px 25px;
+			margin: 10px auto;
+		}
+	}
+
+	.footer-sponsors {
+		h3 {
+			transform: translate(0px);
+		}
+	}
+
+	.footer-info-block {
+		div {
+			min-width: 100%;
+		}
+	}
 }
