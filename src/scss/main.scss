@@ -1,7 +1,6 @@
 // Adaptive styles at the end of the file
 @import 'color';
-
-html {
+w {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
@@ -17,7 +16,7 @@ html {
 
 body {
 	font-family: sans-serif;
-	transition: .3s;
+	transition: all .3s;
 	min-width: 100%;
 }
 
@@ -29,7 +28,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 800px;
+	height: 900px;
 }
 
 
@@ -78,6 +77,24 @@ body {
 .top-nav {
 	display: flex;
 	justify-content: space-between;
+
+}
+
+
+
+#switch-menu:checked ~ div nav {
+	display: block;
+	transform: translateY(0%);
+	transition: all 1.5s;
+	visibility: visible;
+	opacity: 1;
+	position: static;
+}
+
+.switch-menu {
+	color: #fff;
+	transition: .5s;
+	display: none;
 }
 
 .authorisation {

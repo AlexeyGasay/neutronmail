@@ -15,7 +15,7 @@
     .upgrade-plan .donate .gradient {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff35bcdf",endColorstr="#ff5d7beb",GradientType=0); } }
 
-html {
+w {
   scroll-behavior: smooth;
   overflow-x: hidden; }
 
@@ -28,8 +28,8 @@ html {
 
 body {
   font-family: sans-serif;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   min-width: 100%; }
 
 .header-container {
@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 800px; }
+  height: 900px; }
 
 .select-lang {
   display: -webkit-box;
@@ -74,6 +74,22 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+#switch-menu:checked ~ div nav {
+  display: block;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  visibility: visible;
+  opacity: 1;
+  position: static; }
+
+.switch-menu {
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: none; }
 
 .authorisation .login {
   color: #474747;
@@ -612,6 +628,8 @@ footer {
     margin-left: 80px; } }
 
 @media screen and (max-width: 1024px) {
+  html {
+    overflow: visible; }
   .container {
     padding-right: 5px;
     padding-left: 5px; }
@@ -658,11 +676,24 @@ footer {
   .advantage {
     min-width: 50%;
     margin: 10px auto; }
+  .download-app {
+    background: none; }
   .sponsors {
     padding: 0; }
     .sponsors img {
       width: 100%;
       height: auto; }
+  .citation {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .download-app {
     margin: 0; }
   footer {
@@ -675,6 +706,87 @@ footer {
     content: none; } }
 
 @media screen and (max-width: 720px) {
+  .switch-menu {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%); }
+  .top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative; }
+    .top-nav .authorisation {
+      margin: 0 auto; }
+  .switch-menu {
+    border-radius: 10px  10px 10px;
+    border-bottom: 2px solid #603c73;
+    color: #603c73;
+    font-weight: 900;
+    font-size: 20px;
+    max-width: 50%;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    outline: none;
+    display: block; }
+    .switch-menu:hover {
+      background-color: #fff;
+      border-top: 2px solid #603c73;
+      color: #603c73;
+      -webkit-transition: .5s;
+      transition: .5s;
+      -webkit-box-shadow: 0px 5px 5px 0px #603c73;
+      box-shadow: 0px 5px 5px 0px #603c73; }
+    .switch-menu a {
+      color: #fff; }
+  #switch-menu:checked ~ div nav {
+    display: block;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    visibility: visible;
+    opacity: 1;
+    position: static; }
+  #switch-menu:checked ~ div label {
+    background-color: #fff;
+    border-top: 2px solid #603c73;
+    color: #603c73;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-box-shadow: 0px 5px 5px 0px #603c73;
+    box-shadow: 0px 5px 5px 0px #603c73; }
+  .top-nav nav {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    top: 0%;
+    left: 45%;
+    position: absolute;
+    opacity: 0; }
+  .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .main-nav li {
+      text-align: left;
+      margin: 0; }
   .advantage {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
