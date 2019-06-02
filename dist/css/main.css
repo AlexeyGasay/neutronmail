@@ -794,6 +794,11 @@ footer {
     min-width: 100%; } }
 
 @media screen and (max-width: 620px) {
+  .citation p:before {
+    content: none; }
+  .download-app .download-link section {
+    -webkit-transform: none;
+    transform: none; }
   .upgrade-plan div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -810,4 +815,13 @@ footer {
     -webkit-transform: translate(0px);
     transform: translate(0px); }
   .footer-info-block div {
-    min-width: 100%; } }
+    min-width: 100%; }
+  .our-social ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .our-social ul li {
+      margin-top: 5px; }
+    .our-social ul li:nth-child(2n) {
+      display: none; } }

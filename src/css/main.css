@@ -683,6 +683,10 @@ footer {
     min-width: 100%; } }
 
 @media screen and (max-width: 620px) {
+  .citation p:before {
+    content: none; }
+  .download-app .download-link section {
+    transform: none; }
   .upgrade-plan div {
     display: flex;
     flex-direction: column; }
@@ -693,4 +697,10 @@ footer {
   .footer-sponsors h3 {
     transform: translate(0px); }
   .footer-info-block div {
-    min-width: 100%; } }
+    min-width: 100%; }
+  .our-social ul {
+    flex-direction: column; }
+    .our-social ul li {
+      margin-top: 5px; }
+    .our-social ul li:nth-child(2n) {
+      display: none; } }

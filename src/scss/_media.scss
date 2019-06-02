@@ -401,7 +401,21 @@
 
 @media screen and (max-width: 620px) {
 
+	.citation p {
+		&:before {
+			content: none;
+		}
+	}
 
+	.download-app {
+
+		.download-link {
+			section {
+				transform: none;
+			}
+		}
+
+}
 	.upgrade-plan {
 		div {
 			display: flex;
@@ -424,6 +438,23 @@
 	.footer-info-block {
 		div {
 			min-width: 100%;
+		}
+	}
+
+	.our-social {
+
+		ul {
+			flex-direction: column;
+
+			li {
+				margin-top: 5px;
+			}
+
+			li:nth-child(2n) {
+				display: none;
+			}
+
+
 		}
 	}
 
