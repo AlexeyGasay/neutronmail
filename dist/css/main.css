@@ -15,10 +15,6 @@
     .upgrade-plan .donate .gradient {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff35bcdf",endColorstr="#ff5d7beb",GradientType=0); } }
 
-w {
-  scroll-behavior: smooth;
-  overflow-x: hidden; }
-
 * {
   list-style-type: none;
   text-decoration: none;
@@ -30,7 +26,8 @@ body {
   font-family: sans-serif;
   -webkit-transition: all .3s;
   transition: all .3s;
-  min-width: 100%; }
+  min-width: 100%;
+  overflow-x: hidden; }
 
 .header-container {
   padding-top: 80px;
