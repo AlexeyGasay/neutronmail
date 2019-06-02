@@ -8,6 +8,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Titillium Web';
+
 }
 
 
@@ -15,7 +16,7 @@ body {
 	font-family: sans-serif;
 	transition: all .3s;
 	min-width: 100%;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 
 }
 
@@ -586,7 +587,11 @@ footer {
 	margin: 80px 0 50px 0;
 	position: relative;
 	height: 603px;
-	overflow-y: hidden;
+
+	// &:before,
+	// &::after {
+	// 	overflow: hidden;
+	// }
 
 	a {
 		outline: none;
@@ -690,10 +695,11 @@ footer {
 		content: '';
 		position: absolute;
 		width: 1px;
-		height: 1000%;
+		height: 150%;
 		top: 0;
 		right: -10%;
 		background-color: $base-color;
+		overflow-y: hidden;
 	}
 }
 

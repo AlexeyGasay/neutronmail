@@ -391,8 +391,7 @@ body {
 footer {
   margin: 80px 0 50px 0;
   position: relative;
-  height: 603px;
-  overflow-y: hidden; }
+  height: 603px; }
   footer a {
     outline: none; }
     footer a:hover, footer a:focus {
@@ -457,10 +456,11 @@ footer {
     content: '';
     position: absolute;
     width: 1px;
-    height: 1000%;
+    height: 150%;
     top: 0;
     right: -10%;
-    background-color: #959393; }
+    background-color: #959393;
+    overflow-y: hidden; }
 
 .legal {
   margin-left: 100px; }
@@ -609,8 +609,6 @@ footer {
     flex-direction: column; }
   .download-app {
     margin: 0; }
-  footer {
-    overflow: inherit; }
   .footer-info-block div {
     min-width: 50%;
     margin: 15px auto;
