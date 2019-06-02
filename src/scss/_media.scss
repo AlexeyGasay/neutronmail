@@ -403,9 +403,53 @@
 
 @media screen and (max-width: 620px) {
 
-	.banner h1 {
-		font-size: 38px;
+	.banner {
+
+		h1 {
+			font-size: 38px
+		}
+
+		.create-acc {
+			font-size: 15px;
+			padding: 15px 35px;
+		}
 	}
+
+
+
+
+
+
+	.headline-phisical-security {
+		h2 {
+			font-size: 38px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+	}
+
+	.learn-more {
+		max-width: 80%;
+		margin: 10px auto;
+		padding: 5px;
+
+		span {
+			max-width: 200px;
+			a {
+				transform: none;
+				box-shadow: none;
+				padding: 15px 20px;
+
+				&:before {
+					display: none;
+
+				}
+			}
+		}
+	}
+
 
 	.citation p {
 		&:before {

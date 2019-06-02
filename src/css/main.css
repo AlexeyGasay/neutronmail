@@ -680,6 +680,25 @@ footer {
 @media screen and (max-width: 620px) {
   .banner h1 {
     font-size: 38px; }
+  .banner .create-acc {
+    font-size: 15px;
+    padding: 15px 35px; }
+  .headline-phisical-security h2 {
+    font-size: 38px; }
+  .headline-phisical-security p {
+    font-size: 18px; }
+  .learn-more {
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 5px; }
+    .learn-more span {
+      max-width: 200px; }
+      .learn-more span a {
+        transform: none;
+        box-shadow: none;
+        padding: 15px 20px; }
+        .learn-more span a:before {
+          display: none; }
   .citation p:before {
     content: none; }
   .download-app .download-link section {
