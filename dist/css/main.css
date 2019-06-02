@@ -794,6 +794,8 @@ footer {
     min-width: 100%; } }
 
 @media screen and (max-width: 620px) {
+  .banner h1 {
+    font-size: 38px; }
   .citation p:before {
     content: none; }
   .download-app .download-link section {
