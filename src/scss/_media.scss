@@ -451,6 +451,10 @@
 	}
 
 
+	.sponsors {
+		// display: none;
+	}
+
 	.citation p {
 		&:before {
 			content: none;
@@ -480,6 +484,8 @@
 	}
 
 	.footer-sponsors {
+		margin-left: 0;
+
 		h3 {
 			transform: translate(0px);
 		}
@@ -509,3 +515,36 @@
 	}
 
 }// 620px
+
+
+
+
+@media screen and (max-width: 480px) {
+	.banner {
+
+		.col {
+			flex-direction: column;
+
+		}
+	}
+	.learn-more {
+		min-width: 100%;
+		margin: 25px 0;
+
+		span {
+			a {
+
+				font-size: 15px;
+				padding: 10px 10px;
+			}
+
+		}
+
+	}
+
+	.sponsors {
+		display: none;
+	}
+
+
+}
