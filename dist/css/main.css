@@ -22,6 +22,9 @@
   padding: 0;
   font-family: 'Titillium Web'; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: sans-serif;
   -webkit-transition: all .3s;
